@@ -1,0 +1,14 @@
+<div class="jumbotron">
+  <h1>SEARCH</h1>
+  <form>
+    <div class="form-group">
+      <h3>Find Events: </h3>
+      <input class="form-control" type="text" placeholder="Type in the event you're looking for..." [(ngModel)]="searchQuery" name="searchQuery" (keyup)="searchEvents()">
+
+
+    <div class="col-xs-4 col-sm-6">
+      <button type="submit" class="btn btn-default">Find That Event!</button>
+    </div>
+    </div>
+  </form>
+</div>
