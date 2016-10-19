@@ -20,6 +20,10 @@
     <script>
       System.import('app').catch(function(err){ console.error(err); });
     </script>
+    <base href="/">
+  </head>
+
+  <body>
     <script>
     window.fbAsyncInit = function() {
       FB.init({
@@ -37,10 +41,6 @@
        fjs.parentNode.insertBefore(js, fjs);
      }(document, 'script', 'facebook-jssdk'));
   </script>
-    <base href="/">
-  </head>
-
-  <body>
     <my-app>Loading...</my-app>
   </body>
 </html>

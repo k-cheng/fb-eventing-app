@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { SkyscannerService } from './services/skyscanner.service';
+import { EventService } from './services/event.service';
 
 @Component({
     moduleId:module.id,
     selector: 'my-app',
     templateUrl: 'app.component.html',
-    providers: [ SkyscannerService ]
+    providers: [ EventService ]
 })
 export class AppComponent { }

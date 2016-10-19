@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SkyscannerService } from '../../services/skyscanner.service';
+import { EventService } from '../../services/event.service';
 
 @Component({
     moduleId:module.id, // lets us use relative pathing for templateUrl
@@ -10,12 +10,12 @@ export class SearchComponent {
 
   searchQuery:string;
 
-  constructor(private _skyscannerService:SkyscannerService) {
+  constructor(private _eventService:EventService) {
 
   }
 
-  searchCities() {
-    this._skyscannerService.searchCities(this.searchQuery).subscribe(res => {
+  searchEvents() {
+    this._eventService.searchEvents(this.searchQuery).subscribe(res => {
       console.log(res);
     });
     console.log(this.searchQuery)
